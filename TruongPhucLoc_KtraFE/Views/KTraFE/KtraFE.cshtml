@@ -1,0 +1,422 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+
+        body {
+            background: #f5f5fa;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: #0b74e5;
+            font-weight: bold;
+        }
+
+        .search {
+            flex: 1;
+            display: flex;
+        }
+
+            .search input {
+                flex: 1;
+                padding: 12px;
+                border: 1px solid #ddd;
+                border-radius: 6px 0 0 6px;
+            }
+
+            .search button {
+                padding: 12px 20px;
+                background: #0b74e5;
+                color: #fff;
+                border: none;
+                border-radius: 0 6px 6px 0;
+                cursor: pointer;
+            }
+
+        .container {
+            max-width: 1400px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 320px 1fr 320px;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+       
+
+        .product-image {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .thumbs {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+            .thumbs img {
+                width: 60px;
+                height: 60px;
+                border: 1px solid #ddd;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+        
+
+        .badges {
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            background: #e7f0ff;
+            color: #0b74e5;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .title {
+            font-size: 30px;
+            margin: 15px 0;
+        }
+
+        .rating {
+            color: #f5a623;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 42px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .select-group select {
+            padding: 10px;
+            width: 120px;
+            border: 1px solid #0b74e5;
+            border-radius: 5px;
+        }
+
+        .shipping {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+            .shipping p {
+                margin: 10px 0;
+            }
+
+       
+
+        .store {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .quantity {
+            display: flex;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+            .quantity button {
+                width: 35px;
+                height: 35px;
+                border: 1px solid #ccc;
+                background: #fff;
+            }
+
+            .quantity input {
+                width: 50px;
+                text-align: center;
+            }
+
+        .total {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .buy-now,
+        .add-cart,
+        .pay-later {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .buy-now {
+            background: #ff424e;
+            color: #fff;
+            border: none;
+        }
+
+        .add-cart,
+        .pay-later {
+            background: #fff;
+            color: #0b74e5;
+            border: 1px solid #0b74e5;
+        }
+
+        .banner {
+            margin-top: 20px;
+        }
+
+            .banner img {
+                width: 100%;
+                border-radius: 8px;
+            }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">TIKI</div>
+
+        <div class="search">
+            <input type="text" placeholder="Freeship đơn từ 45k, giảm nhiều hơn cùng FREESHIP EXTRA">
+            <button>Tìm kiếm</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="card">
+
+            <img src="https://www.bing.com/images/search?view=detailV2&ccid=HDqNq4RV&id=735D3F62D655CB1F6EBE390D34B91C116CB5B7A5&thid=OIP.HDqNq4RVPHveG-X_pZh6XQHaE1&mediaurl=https%3a%2f%2fres.cloudinary.com%2frainforest-cruises%2fimages%2fc_fill%2cg_auto%2ff_auto%2cq_auto%2fw_1120%2ch_732%2cc_fill%2cg_auto%2fv1661347392%2findia-food-paratha%2findia-food-paratha-1120x732.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1c3a8dab84553c7bde1be5ffa5987a5d%3frik%3dpbe1bBEcuTQNOQ%26pid%3dImgRaw%26r%3d0&exph=732&expw=1120&q=food&FORM=IRPRST&ck=8AD56EDDE5D5CFE890AD349234A6572E&selectedIndex=10&itb=0"
+                 alt="hinhdoan1" />
+
+            <div class="thumbs">
+                <img src="https://www.bing.com/images/search?view=detailV2&ccid=MMtOF9wW&id=6D7C874B91071278F34783C04AC717AB894B8CFB&thid=OIP.MMtOF9wWJhowGcUwb8r5YgHaEK&mediaurl=https%3a%2f%2fwallpapers.com%2fimages%2fhd%2ffood-4k-spdnpz7bhmx4kv2r.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.30cb4e17dc16261a3019c5306fcaf962%3frik%3d%252b4xLiasXx0rAgw%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=food&FORM=IRPRST&ck=98C50973BB919DF14C4008D87E7818FC&selectedIndex=0&itb=0"
+                     alt="hinhdoan2" />
+                <img src="https://www.bing.com/images/search?view=detailV2&ccid=MMtOF9wW&id=6D7C874B91071278F34783C04AC717AB894B8CFB&thid=OIP.MMtOF9wWJhowGcUwb8r5YgHaEK&mediaurl=https%3a%2f%2fwallpapers.com%2fimages%2fhd%2ffood-4k-spdnpz7bhmx4kv2r.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.30cb4e17dc16261a3019c5306fcaf962%3frik%3d%252b4xLiasXx0rAgw%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=food&FORM=IRPRST&ck=98C50973BB919DF14C4008D87E7818FC&selectedIndex=0&itb=0"
+                     alt="hinhdoan3" />
+                <img src="https://www.bing.com/images/search?view=detailV2&ccid=MMtOF9wW&id=6D7C874B91071278F34783C04AC717AB894B8CFB&thid=OIP.MMtOF9wWJhowGcUwb8r5YgHaEK&mediaurl=https%3a%2f%2fwallpapers.com%2fimages%2fhd%2ffood-4k-spdnpz7bhmx4kv2r.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.30cb4e17dc16261a3019c5306fcaf962%3frik%3d%252b4xLiasXx0rAgw%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=food&FORM=IRPRST&ck=98C50973BB919DF14C4008D87E7818FC&selectedIndex=0&itb=0"
+                     alt="hinhdoan4" />
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="badges">
+                <span class="badge">TOP DEAL</span>
+                <span class="badge">CHÍNH HÃNG</span>
+            </div>
+
+            <h1 class="title">
+                Lon Sữa Glucerna 800g/lon - Tặng 2 gói dùng thử
+            </h1>
+
+            <div class="rating">
+                ★★★★★ (11 đánh giá)
+            </div>
+
+            <div class="price">
+                1.034.550₫
+            </div>
+
+            <div class="select-group">
+                <h3>Hương vị</h3>
+                <br>
+                <select>
+                    <option>Vani</option>
+                    <option>Socola</option>
+                </select>
+            </div>
+
+            <div class="shipping">
+                <h3>Thông tin vận chuyển</h3>
+                <p> Giao đến: Quận 1, TP.HCM</p>
+                <p>Giao siêu tốc 2 giờ</p>
+                <p> Freeship đơn từ 45K</p>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="store">
+                Tiki Trading ⭐ 4.7
+            </div>
+
+            <label>Số lượng</label>
+
+            <input type="hidden"
+                   id="giaSanPham"
+                   value="1034550" />
+
+            <div class="quantity">
+
+                <button type="button"
+                        onclick="giamSoLuong()">
+                    -
+                </button>
+
+                <input id="soLuong"
+                       type="text"
+                       value="1"
+                       readonly />
+
+                <button type="button"
+                        onclick="tangSoLuong()">
+                    +
+                </button>
+
+            </div>
+
+            <div id="tamTinh" class="total">
+                1.034.550₫
+            </div>
+
+            <button class="buy-now"
+                    onclick="muaNgay()">
+                Mua ngay
+            </button>
+
+
+            <button class="add-cart"
+                    onclick="themVaoGio()">
+                Thêm vào giỏ
+            </button>
+
+            <button class="pay-later"
+                    onclick="muaTraSau()">
+                Mua trước trả sau
+            </button>
+
+            <div class="banner">
+                <img src="https://www.bing.com/images/search?view=detailV2&ccid=UQ7gKgyw&id=5AEC9D14E7CC34BC2E00709B26AEB6898E3FF2B2&thid=OIP.UQ7gKgyw7-40bH8FlEOkkgHaFB&mediaurl=https%3a%2f%2fhocvien.tiki.vn%2fwp-content%2fuploads%2f2022%2f11%2f1-creation-e1669363601493-1920x1301.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.510ee02a0cb0efee346c7f059443a492%3frik%3dsvI%252fjom2riabcA%26pid%3dImgRaw%26r%3d0&exph=1301&expw=1920&q=tiki+qu%e1%ba%a3ng+c%c3%a1o&FORM=IRPRST&ck=45BAC6C84D3148BEC7347A1C00576380&selectedIndex=5&itb=0" alt="quangcao" />
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+    <script>
+
+        function changeImage(src) {
+            document.getElementById("mainImage").src = src;
+        }
+
+        function tangSoLuong() {
+
+            let soLuong =
+                parseInt(document.getElementById("soLuong").value);
+
+            soLuong++;
+
+            document.getElementById("soLuong").value = soLuong;
+
+            tinhTamTinh();
+        }
+
+        function giamSoLuong() {
+
+            let soLuong =
+                parseInt(document.getElementById("soLuong").value);
+
+            if (soLuong > 1) {
+                soLuong--;
+            }
+
+            document.getElementById("soLuong").value = soLuong;
+
+            tinhTamTinh();
+        }
+
+        function tinhTamTinh() {
+
+            let gia =
+                Number(document.getElementById("giaSanPham").value);
+
+            let soLuong =
+                Number(document.getElementById("soLuong").value);
+
+            let tong = gia * soLuong;
+
+            document.getElementById("tamTinh").innerText =
+                tong.toLocaleString('vi-VN') + "₫";
+        }
+
+        function muaNgay() {
+
+            let soLuong =
+                document.getElementById("soLuong").value;
+
+            alert(
+                "Mua ngay thành công!\nSố lượng: " +
+                soLuong
+            );
+        }
+
+        function themVaoGio() {
+
+            let soLuong =
+                document.getElementById("soLuong").value;
+
+            alert(
+                "Đã thêm " +
+                soLuong +
+                " sản phẩm vào giỏ hàng"
+            );
+        }
+
+        function muaTraSau() {
+
+            alert(
+                "Chuyển sang trang trả góp"
+            );
+        }
+
+        window.onload = function () {
+            tinhTamTinh();
+        };
+
+    </script>
+
+
+</body>
+</html>
